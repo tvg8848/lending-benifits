@@ -1,0 +1,32 @@
+.pay{
+	background: #D4F2F9;
+	padding: 160px 20px 95px;
+	&__body{
+		display: flex;
+		flex-direction: column;
+		gap: 43px;
+		align-items: center;
+
+	}
+	&__text{
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150% ;
+		/* or 150% */
+		max-width: 478px;
+		color: #b8b8b8;
+	}
+}
+@media (max-width:990.98px){
+	.pay{
+		padding-top: 100px;
+		padding-bottom: 75px;}
+}
+@media (max-width:767px){
+	.pay{
+		padding-top: 80px;
+		padding-bottom: 65px;
+}
+}

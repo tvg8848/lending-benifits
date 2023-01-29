@@ -1,0 +1,144 @@
+.advertising{
+	overflow: hidden;
+.container{
+	position: relative;
+}
+	&__body{
+		display: flex;
+	}
+	&__image{
+		flex: 0 1 65%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		img{
+			max-width: 600px;
+			max-height: 200px;
+		}
+		padding-top: 250px;
+		padding-bottom: 350px;
+		background-color: white;
+	}
+	&__content{
+		padding-top: 145px;
+		top: 0;
+		right: -60px;
+		position: absolute;
+		padding-left: 60px;
+		padding-right: 98px;
+		max-width: 480px;
+	}
+	&__content::after {
+		content: "";
+		background: #f5f5f5;
+		position: absolute;
+		width: 1000%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		display: block;
+	}
+	&__ledy{
+		position: relative;
+		& img{
+			border-radius: 15px;
+		}
+	}
+	&__ledy{
+		cursor: pointer;
+		& img:hover{
+			transform: scale(1.1);
+		}
+	}
+	&__title{
+		margin-bottom: 90px;
+		
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 100%;
+		/* or 100% */
+		color: #0A0A0A;
+	}
+	&__text{
+		margin-bottom: 20px;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 159%;
+		/* or 159% */
+		color: #0A0A0A;
+	}
+	&__ledy-text{
+		position: absolute;
+		top: 28px;
+		left: 0;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 130%;
+		/* or 130% */
+		color: #504F4F;
+		max-width: 400px;
+	}
+}
+
+@media (max-width:1200px){
+	.advertising{
+		&__image{
+			flex: 0 1 40%;
+		}
+	}
+}
+@media (max-width:990.98px){
+	.advertising{
+		&__image{
+			flex: 0 1 50%;
+			justify-content: flex-start;
+			align-items: flex-end;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+@media (max-width:767px){
+	.advertising{
+		&__body{
+			flex-direction: column;
+		}
+		&__content{
+			max-width: 100%;
+			max-height: 100%;
+			display: block;
+			position: relative;
+			padding-top: 40px;
+			padding-left: 10px;
+			left: 0;
+			right: 0;
+		}
+		&__image{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			background-color: white;
+		}
+	&__text{
+		margin-bottom: 20px;
+	}
+		&__title{
+			margin-bottom: 40px;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 100%;
+			/* or 100% */
+			color: #0A0A0A;
+		}
+	}
+}

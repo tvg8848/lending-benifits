@@ -1,0 +1,32 @@
+.black{
+	padding-top: 120px;
+	padding-bottom: 95px;
+	background: #0A0A0A;
+	&__container{
+		display: flex;
+		flex-direction: column;
+		gap: 33px;
+		text-align: center;
+	}
+	&__title{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 120%;
+		/* identical to box height, or 120% */
+		text-align: center;
+		color: #FAF9F7;
+	}
+	&__subtitle{
+		
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 142%;
+		/* identical to box height, or 142% */
+		text-align: center;
+		color: #504F4F;
+	}
+}

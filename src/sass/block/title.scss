@@ -1,0 +1,20 @@
+.title{
+	font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 100%;
+		/* or 100% */
+		color: #0A0A0A;
+}
+@media (max-width:990.98px){
+	.title{
+		font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 38px;
+			line-height: 80%;
+			/* or 100% */
+			color: #0A0A0A;
+	}
+}

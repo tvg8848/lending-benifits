@@ -1,0 +1,33 @@
+.pricing{
+	background: #FBF19B;
+	padding: 231px 20px 250px;
+	&__body{
+		display: flex;
+		flex-direction: column;
+		gap: 43px;
+		align-items: center;
+
+	}
+	&__text{
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150% ;
+		/* or 150% */
+		max-width: 478px;
+		color: #0A0A0A;
+	}
+}
+@media (max-width:990.98px){
+	.pricing{
+		padding-top: 140px;
+		padding-bottom: 180px;
+		background: #FBF19B;}
+}
+@media (max-width:767px){
+	.pricing{
+		padding-top: 100px;
+		padding-bottom: 120px;
+		background: #FBF19B;}
+}
